@@ -1,0 +1,40 @@
+
+.contain-main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70%; 
+    border: 1px solid #9f494975;
+    padding: 10px;
+    background-color: lightgrey;
+  
+}
+.p {
+    font-size: 25px;
+    max-width: 35%; 
+    height: 40%; 
+    
+    /* Add border */
+    border: 2px solid #333;
+    
+    /* Add rounded corners */
+    border-radius: 8px; 
+  
+    /* Add box shadow */
+    box-shadow: 2px 2px 4px rgba(250, 192, 192, 0.3); 
+    
+    /* Add hover effect (optional) */
+    transition: transform 0.3s ease-in-out;
+     padding: 20px; 
+    }
+
+  
+.img {
+    width: 100%;
+    margin-bottom: 200px;
+
+  }
+  color{
+    color: rgb(54, 4, 4);
+  }
+ 

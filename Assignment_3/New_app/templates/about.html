@@ -1,0 +1,63 @@
+{% extends 'base.html' %}
+
+{% block content %}
+  <header class="header">
+    <nav class="navbar">
+      <div class="container1">
+        <a href="#" class="logo">BhinnoShaad</a>
+      </div>
+    </nav>
+  </header>
+
+  <main class="container">
+    <section class="about-section">
+      <h1>About Us</h1>
+      <p>Welcome to BhinnoShaad! Founded in December 14, 2020 in Lincoln, Nebraska with intention to provide the best quality foods to our people providing unique taste.....</p>
+
+    </section>
+
+   <style>
+    .team-member-img {
+      max-height: 150px; /* Set the desired height */
+      width: auto; /* Maintain the aspect ratio */
+  }
+  
+   </style>
+   <section class="team-section">
+    <h2>Meet Our Team</h2>
+    <div class="team-members">
+        <div class="team-member row">
+            <div class="member-info col-4">
+                <img src="../static/image/CEO_bs.png" alt="Team Member 1" class="team-member-img">
+                <h3>Sumaiya Sharmin</h3>
+                <p>Position: CEO</p>
+            </div>
+            <div class="member-info col-4">
+                <img src="../static/image/MD_bs.png" alt="Team Member 2" class="team-member-img">
+                <h3>Md Meagy</h3>
+                <p>Position: Managing Director</p>
+            </div>
+            <div class="member-info col-4">
+                <img src="../static/image/JT_bs.png" alt="Team Member 3" class="team-member-img">
+                <h3>Jareen Tasneem</h3>
+                <p>Position: Senior Consultant</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <section class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Email: jsharmin@bhinnoshaad.com</p>
+      <p>Phone: +1(617)-710-5517</p>
+      <!-- Add address, social media links, or other contact details -->
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 BhinnoShaad. All rights reserved.</p>
+    </div>
+  </footer>
+
+  {% endblock %}
