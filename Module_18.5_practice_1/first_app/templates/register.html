@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+{% if messages %}
+   {% for m in messages %}
+   {% comment %} <h2 class="text-center text-success"> {{m}}</h2> {% endcomment %}
+   <small{% if m.tags %} class="{{m.tags}}" {%endif%}>{{m}}</small>
+   {% endfor %}
+    {% endif %}
+
+  <form style="width:50%;margin:auto;" class="mt-5" method="post">
+    {% csrf_token %}
+    <h2>{{ type }} page</h2>
+    <!-- {{ form | crispy }} -->
+    {% for fm in form %}
+      {{ fm.label_tag }}
+      {{ fm }}
+      {{ fm.errors | striptags }}
+    {% endfor %}
+    <button class="btn btn-warning mb-5">Submit</button>
+  </form>
+{% endblock %}
