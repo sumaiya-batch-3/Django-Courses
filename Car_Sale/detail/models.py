@@ -9,7 +9,7 @@ class Car(models.Model):
     quantity = models.PositiveIntegerField(default=0)
     brand = models.ManyToManyField(Brand)
     user = models.ForeignKey(User, on_delete=models.CASCADE, null=True, blank=True)
-    image = models.ImageField(upload_to='detail/media/uploads/', blank = True,
+    image = models.ImageField(upload_to='user/media/uploads/', blank = True,
      null = True)
 
     def __str__(self):
